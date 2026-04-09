@@ -16,7 +16,7 @@ const pool = new Pool({
   ssl: { rejectUnauthorized: false } // nécessaire sur fly.io
 });
 
-// Création de la table au démarrage
+// Création de la table au démarrage à voir
 pool.query(`
   CREATE TABLE IF NOT EXISTS contacts (
     id SERIAL PRIMARY KEY,
